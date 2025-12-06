@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { X, Maximize2, Minimize2, RotateCw, Move } from "lucide-react";
 import * as THREE from "three";
+// Ensure this path is correct based on your project structure
+import panoramaImage from "../assets/panoramaImage.png";
 
-const DEFAULT_PANORAMA = "../assets/08d287ee3a138a57cdb547861fa86a6f4201e8bf.png";
+const DEFAULT_PANORAMA = panoramaImage;
 
 interface VirtualTourModalProps {
   onClose: () => void;

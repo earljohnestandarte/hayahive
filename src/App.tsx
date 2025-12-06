@@ -1,4 +1,5 @@
 import { useState } from "react";
+import hayahiveLogo from "./assets/hayahive.png";
 import { Home, Search, MessageCircle, User, Heart, Shield } from "lucide-react";
 import { HomeScreen } from "./components/HomeScreen";
 import { HouseProfile } from "./components/HouseProfile";
@@ -31,8 +32,8 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#14B8A6] to-[#0F766E] rounded-xl flex items-center justify-center">
-                <Shield size={24} className="text-white" fill="white" />
+              <div className="w-16 h-16 rounded-xl overflow-hidden bg-white flex items-center justify-center">
+                <img src={hayahiveLogo} alt="HayaHive logo" className="w-16 h-16 object-cover" />
               </div>
               <div>
                 <h2 className="text-[#1E293B]">HayaHive</h2>
